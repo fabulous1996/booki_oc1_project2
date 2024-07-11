@@ -24,18 +24,12 @@ p {
   font-size: 1.6rem;
 }
 
-:root {
-  --main-color: #0065FC;
-  --main-bg-color: #F2F2F2;
-  --filter-bg-color: #DEEBFF;
-}
-
 .fa-solid {
-  color: var(--main-color);
+  color: #0065fc;
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .section-title {
@@ -44,4 +38,20 @@ text-decoration: none;
 
 li {
   list-style: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+.card-rating .fa-star {
+  font-size: 14px;
+}
+
+.card-rating .neutral-star {
+  font-size: 14px;
+}
+
+.neutral-star {
+  color: #f2f2f2;
 }
