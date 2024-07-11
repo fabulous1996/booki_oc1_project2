@@ -19,10 +19,9 @@ header {
 /***************/
 
 .main-nav-list {
-  list-style: none;
   display: flex;
   align-items: center;
-  gap: 10rem;
+  gap: 100px;
 }
 
 .main-nav-link {
@@ -43,7 +42,7 @@ header {
   width: 0;
   height: 2px;
   background-color: #0065fc;
-  transition: width 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .main-nav-link:hover::before,
@@ -339,3 +338,35 @@ form {
 /*FOOTER*/
 /***************/
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f2f2f2;
+  margin-top: 65px;
+}
+
+.about,
+.footer-hebergements,
+.footer-assitance {
+  width: 30%;
+}
+
+.about h2,
+.footer-hebergements h2,
+.footer-assitance h2 {
+  margin-bottom: 20px;
+}
+
+.item-footer {
+  margin-bottom: 10px;
+}
+
+.item-footer a {
+  color: black;
+  font-size: 1.6rem;
+}
+
+.item-footer a:hover {
+  color: #0065fc;
+}
