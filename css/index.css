@@ -31,10 +31,12 @@ header {
   color: #000;
   font-weight: 500;
   font-size: 1.8rem;
-  transition: all 0.3s;
+  
+  transition: all 0.3s; /*Temps de transition au hover de la nav bar pour permettre le changement de couleur des éléments*/
 }
 
 .main-nav-link::before {
+  /* Code permettant l'affichage d'une barre au dessus des éléments de la navbar au hover */
   content: "";
   position: absolute;
   top: -39px;
@@ -47,6 +49,7 @@ header {
 
 .main-nav-link:hover::before,
 .main-nav-link:active::before {
+  /*Permet à la barre qui s'affiche au dessus des éléments de la navbar de prendre 100% de la width de cs éléments au hover*/
   width: 100%;
 }
 
@@ -60,16 +63,16 @@ header {
 /***************/
 
 .sub-header {
-  margin-top: 3rem;
+  margin-top: 30px;
 }
 
 .title p {
-  margin: 0.5rem;
+  margin: 5px;
 }
 
 form {
   display: flex;
-  margin-top: 2.6rem;
+  margin-top: 20.6px;
 }
 
 .form-container {
@@ -92,7 +95,7 @@ form {
 
 .fa-location-dot {
   color: #000;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .btn-form-desktop {
@@ -103,7 +106,7 @@ form {
   border: 1px;
   border-radius: 0px 15px 15px 0px;
   cursor: pointer;
-  color: white;
+  color: #ffff;
 }
 
 #location {
@@ -121,7 +124,7 @@ form {
 }
 
 .filters {
-  margin-top: 3.2rem;
+  margin-top: 30.2px;
   display: flex;
   align-items: center;
   gap: 25px;
@@ -136,11 +139,7 @@ form {
 .filters-logo .fa-person,
 .filters-logo .fa-heart,
 .filters-logo .fa-fire {
-  font-size: 18px;
-}
-
-.fa-solid .filters {
-  font-size: 56px;
+  font-size: 1.8rem;
 }
 
 .filters p {
@@ -176,8 +175,8 @@ form {
 .info {
   display: flex;
   align-items: center;
-  font-size: 18px;
-  color: #333;
+  font-size: 1.8rem;
+  color: #000;
   margin-top: 35px;
 }
 
@@ -193,7 +192,7 @@ form {
 }
 
 .icon-circle .fa-info {
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #0065fc;
 }
 
@@ -236,9 +235,9 @@ form {
 }
 
 .hebergements-cards .card {
-  background-color: white;
+  background-color: #ffff;
   border-radius: 25px;
-  border: 5px solid white;
+  border: 5px solid #ffff;
   box-shadow: 0px 3px 15px 0px #0000001a;
 }
 
@@ -276,15 +275,15 @@ form {
 }
 
 .fa-chart-line {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .populaires-cards .card {
   display: flex;
   margin-top: 33px;
-  background-color: white;
+  background-color: #ffff;
   border-radius: 25px;
-  border: 5px solid white;
+  border: 5px solid #ffff;
   box-shadow: 0px 3px 15px 0px #0000001a;
 }
 
@@ -305,7 +304,7 @@ form {
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .populaires-cards .card-title {
@@ -319,7 +318,7 @@ form {
 
 .card-title,
 .card-subtitle {
-  color: black;
+  color: #000;
 }
 
 .populaires-cards .card-rating {
@@ -342,7 +341,7 @@ form {
 }
 
 .activites-cards .card {
-  background-color: white;
+  background-color: #ffff;
   border-radius: 25px;
   box-shadow: 0px 3px 15px 0px #0000001a;
 }
@@ -390,10 +389,52 @@ footer {
 }
 
 .item-footer a {
-  color: black;
+  color: #000;
   font-size: 1.4rem;
 }
 
 .item-footer a:hover {
   color: #0065fc;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  .hebergements-and-populaires {
+      flex-direction: column;
+  }
+
+  .hebergements {
+      width: 100%;
+  }
+
+  .populaires {
+      width: 100%;
+      margin-top: 50px;
+  }
+
+  .populaires-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .populaires-cards a {
+      width: 30%;
+  }
+
+  .populaires-cards .card-title {
+      font-size: 14px;
+  }
+
+  .populaires-cards .card-subtitle {
+      font-size: 13px;
+  }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* ... */
 }

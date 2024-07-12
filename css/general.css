@@ -13,7 +13,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #111;
-  padding: 0 16rem;
+  padding: 0 160px;
 }
 
 h1 {
@@ -25,6 +25,7 @@ p {
 }
 
 .fa-solid {
+  /* Permet de rendre les 4 premières étoiles de couleurs bleur sur la partie hébergements et populaires */
   color: #0065fc;
 }
 
@@ -45,13 +46,14 @@ img {
 }
 
 .card-rating .fa-star {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .card-rating .neutral-star {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .neutral-star {
+  /* Permet de rendre la dernière étoile neutre dans la partie hébergements et populaires */
   color: #f2f2f2;
 }
