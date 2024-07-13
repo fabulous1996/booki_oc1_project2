@@ -7,7 +7,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 9.6rem;
-  position: relative;
+  padding: 0 60px 0 40px;
 }
 
 .logo {
@@ -31,8 +31,8 @@ header {
   color: #000;
   font-weight: 500;
   font-size: 1.8rem;
-  
-  transition: all 0.3s; /*Temps de transition au hover de la nav bar pour permettre le changement de couleur des éléments*/
+
+  transition: all 0.3s; /*Temps de transition au hover de la nav-bar pour permettre le changement de couleur des éléments*/
 }
 
 .main-nav-link::before {
@@ -44,12 +44,12 @@ header {
   width: 0;
   height: 2px;
   background-color: #0065fc;
-  transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out; /*Temps mis pour que la barre au dessus des éléments de la nav-bar s'affiche */
 }
 
 .main-nav-link:hover::before,
 .main-nav-link:active::before {
-  /*Permet à la barre qui s'affiche au dessus des éléments de la navbar de prendre 100% de la width de cs éléments au hover*/
+  /*Permet à la barre qui s'affiche au dessus des éléments de la navbar de prendre 100% de la width de ces éléments au hover*/
   width: 100%;
 }
 
@@ -64,15 +64,19 @@ header {
 
 .sub-header {
   margin-top: 30px;
+  padding: 0 50px;
 }
 
 .title p {
   margin: 5px;
 }
 
+.search {
+  padding: 30px 50px;
+}
+
 form {
   display: flex;
-  margin-top: 20.6px;
 }
 
 .form-container {
@@ -87,6 +91,7 @@ form {
 }
 
 .center-flex {
+  /*Permet l'alignement horizontal et vertical du logo localisation dans la partie SEARCH FORM et rendre l'élément cliquable */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,15 +124,16 @@ form {
 /*FILTERS*/
 /***************/
 
-.filters-title {
-  font-size: 1.8rem;
-}
-
 .filters {
-  margin-top: 30.2px;
+  padding: 10px 50px;
   display: flex;
   align-items: center;
   gap: 25px;
+  flex-wrap: wrap;
+}
+
+.filters-title {
+  font-size: 1.8rem;
 }
 
 .filters-logo {
@@ -156,7 +162,7 @@ form {
   gap: 5px;
   justify-content: space-between;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /*Temps mis pour le changement de la couleur du fond au hover des éléments sur la section filtres */
   padding: 10px 20px;
 }
 
@@ -177,10 +183,11 @@ form {
   align-items: center;
   font-size: 1.8rem;
   color: #000;
-  margin-top: 35px;
+  padding: 35px 50px;
 }
 
 .icon-circle {
+  /* Cela permet de créer un cercle autour du logo info */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,17 +207,21 @@ form {
 /*HEBERGEMENTS & POPULAIRES*/
 /***************/
 
+main {
+  padding: 0 50px;
+  display: block;
+}
+
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
+  margin: 0 auto;
 }
 
 .hebergements-and-populaires section {
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 30px;
-  box-sizing: border-box;
 }
 
 .euro {
@@ -231,7 +242,9 @@ form {
 .hebergements-cards {
   margin-top: 35px;
   display: flex;
-  gap: 55px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .hebergements-cards .card {
@@ -239,6 +252,8 @@ form {
   border-radius: 25px;
   border: 5px solid #ffff;
   box-shadow: 0px 3px 15px 0px #0000001a;
+  overflow: hidden;
+  margin: 15px 0;
 }
 
 .hebergements-cards .card-content {
@@ -397,44 +412,3 @@ footer {
   color: #0065fc;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-  .hebergements-and-populaires {
-      flex-direction: column;
-  }
-
-  .hebergements {
-      width: 100%;
-  }
-
-  .populaires {
-      width: 100%;
-      margin-top: 50px;
-  }
-
-  .populaires-cards {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  }
-
-  .populaires-cards a {
-      width: 30%;
-  }
-
-  .populaires-cards .card-title {
-      font-size: 14px;
-  }
-
-  .populaires-cards .card-subtitle {
-      font-size: 13px;
-  }
-}
-
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-  /* ... */
-}
