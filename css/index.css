@@ -246,7 +246,7 @@ main {
 }
 
 .item-1 {
-  order: 1;
+  order: 1; /* L'ordre est identique à l'affichage du code html, d'abbord la class hebergements et ensuite la classe populaires */
 }
 
 .hebergements-cards {
@@ -505,39 +505,38 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  
-form {
-  height: 50px;
-}
-
-.form-container label {
-  height: 50px;
-}
-
-.btn-form-desktop {
-  display: none;
-}
-
-.btn-form-mobile {
-  display: block;
-  width: 50px;
-  height: 100%;
-  padding: 10px 10px;
-  border-radius: 15px;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-  background-color: #0065fc;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.379);
-}
-
-.fa-magnifying-glass {
-  color: #fff;
-}
-  
   .header-main {
     flex-direction: column;
     margin-top: 35px;
+  }
+
+  form {
+    height: 50px;
+  }
+
+  .form-container label {
+    height: 50px;
+  }
+
+  .btn-form-desktop {
+    display: none;
+  }
+
+  .btn-form-mobile {
+    display: block;
+    width: 50px;
+    height: 100%;
+    padding: 10px 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0065fc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.379);
+  }
+
+  .fa-magnifying-glass {
+    color: #fff; /* Correspond au logo en forme de loupe sur la partie formulaire */
   }
 
   .main-nav-link::before {
@@ -552,7 +551,7 @@ form {
   }
 
   .subheader {
-    flex-wrap: wap;
+    flex-wrap: wrap;
   }
 
   .filters-logo {
@@ -614,7 +613,7 @@ form {
   }
 
   .item-2 {
-    order: 1;
+    order: 1; /* La class populaires s'affichera vant la class hebergements */
   }
 
   .item-1 {
