@@ -338,7 +338,7 @@ main {
 }
 
 .fa-chart-line {
-  /* Logo chart en display flex avec "Les plus populaires*/
+  /* Logo chart en display flex avec "Les plus populaires" */
   font-size: 2rem;
 }
 
@@ -613,7 +613,7 @@ footer {
   }
 
   .item-2 {
-    order: 1; /* La class populaires s'affichera vant la class hebergements */
+    order: 1; /* La class populaires s'affichera avant la class hebergements */
   }
 
   .item-1 {

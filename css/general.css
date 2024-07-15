@@ -28,7 +28,7 @@ p {
 }
 
 .fa-solid {
-  /* Permet de rendre les 4 premières étoiles de couleurs bleur sur la partie hébergements et populaires */
+  /* Permet de rendre les 4 premières étoiles de couleurs bleu sur la partie hébergements et populaires */
   color: #0065fc;
 }
 
@@ -48,7 +48,6 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: center;
 }
 
 .card-rating .fa-star {
