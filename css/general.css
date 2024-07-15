@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
 
 html {
@@ -16,7 +15,8 @@ body {
   font-weight: 400;
   color: #000;
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1440px;
+  min-width: 320px;
 }
 
 h1 {
@@ -48,10 +48,11 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: center
+  object-position: center;
 }
 
 .card-rating .fa-star {
+  /* Permet de changer la taille des étoiles de notation */
   font-size: 1.4rem;
 }
 
@@ -63,4 +64,3 @@ img {
   /* Permet de rendre la dernière étoile neutre dans la partie hébergements et populaires */
   color: #f2f2f2;
 }
-
