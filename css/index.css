@@ -510,8 +510,33 @@ footer {
     margin-top: 35px;
   }
 
+  .main-nav-link::before {
+    background-color: #0065fc;
+    height: 2px;
+    top: 30px;
+  }
+
+  .main-nav-link:hover::before,
+  .main-nav-link:active::before {
+    width: 100%;
+  }
+
+  .grey-border {
+    border: 1px solid #f2f2f2;
+    width: 100%;
+    margin-top: 12px;
+  }
+
   form {
     height: 50px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  #location {
+    width: 100%;
   }
 
   .form-container label {
@@ -539,24 +564,34 @@ footer {
     color: #fff; /* Correspond au logo en forme de loupe sur la partie formulaire */
   }
 
-  .main-nav-link::before {
-    background-color: #0065fc;
-    height: 2px;
-    top: 30px;
-  }
-
-  .main-nav-link:hover::before,
-  .main-nav-link:active::before {
-    width: 100%;
-  }
-
   .subheader {
     flex-wrap: wrap;
+  }
+
+  .filters p {
+    width: 160px;
+  }
+
+  .familly {
+    justify-content: flex-start;
   }
 
   .filters-logo {
     flex-wrap: wrap;
   }
+
+  .info {
+    padding: 5px 40px;
+  }
+
+.icon-circle {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-circle .fa-info {
+  font-size: 1rem;
+}
 
   main {
     padding: 0;
